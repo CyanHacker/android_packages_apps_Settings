@@ -17,11 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/pa_pie_controls_title">
 
-    <PreferenceScreen
-            android:key="pa_pie_color"
-            android:title="@string/pa_pie_color_title"
-            android:fragment="com.android.settings.liquid.PieColor" />
-
     <SwitchPreference
         android:key="pa_pie_controls"
         android:title="@string/pa_pie_controls_title"
@@ -50,6 +45,11 @@
         android:title="@string/pa_pie_center_title"
         android:summary="@string/pa_pie_center_summary"
         android:dependency="pa_pie_controls" />
+        
+     <PreferenceScreen
+       android:key="pa_pie_color"
+       android:title="@string/pa_pie_color_title"
+       android:fragment="com.android.settings.liquid.PieColor" />
 
     <CheckBoxPreference
         android:key="pa_pie_stick"
