@@ -18,16 +18,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/liquid_settings_title" >
-
-    <!-- Equalizer -->
+    
+    <!-- RomControl -->
     <Preference
-        android:id="@+id/equalizer_settings"
-        android:title="@string/equalizer_settings_title"
-        android:icon="@drawable/ic_liquid_equalizer" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"
-            android:targetPackage="com.vipercn.viper4android_v2" />
+    	android:icon="@drawable/ic_romco" 
+    	android:title="@string/rom_control">
+        <intent 
+            android:targetPackage="com.hrt.romcontrol" 
+            android:action="android.intent.action.MAIN" 
+            android:targetClass="com.hrt.romcontrol.SplashScreen" />
     </Preference>
 
     <!-- Interface -->
@@ -68,17 +67,6 @@
         android:title="@string/statusbar_settings_title"
         android:fragment="com.android.settings.liquid.StatusBarSettings"
         android:icon="@drawable/ic_liquid_statusbar" />
-
-    <!-- Kernel Tweaker -->
-    <Preference
-        android:id="@+id/kernel_tweaker"
-        android:title="@string/kernel_tweaker_title"
-        android:icon="@drawable/ic_liquid_performance" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.dsht.kerneltweaker.MainActivity"
-            android:targetPackage="com.dsht.kerneltweaker" />
-    </Preference>
 
     <!-- Advanced options -->
     <PreferenceScreen
