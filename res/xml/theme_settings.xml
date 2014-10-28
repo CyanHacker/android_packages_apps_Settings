@@ -100,4 +100,14 @@
                     android:value="mods_alarms,mods_ringtones,mods_notifications"/>
         </intent>
     </Preference>
+    
+    <!-- Themestore -->    
+    <Preference
+        android:icon="@drawable/ic_store"
+        android:title="@string/themestore">
+        <intent
+            android:targetPackage="com.cyngn.theme.store" 
+            android:action="android.intent.action.Main" 
+            android:targetClass="com.cyngn.theme.store.StoreActivity" />
+    </Preference>
 </PreferenceScreen>
