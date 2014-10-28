@@ -102,7 +102,6 @@ import com.android.settings.liquid.BatteryIconStyle;
 import com.android.settings.liquid.blacklist.BlacklistSettings;
 import com.android.settings.liquid.DisplayRotation;
 import com.android.settings.liquid.quicksettings.QuickSettingsTiles;
-import com.android.settings.liquid.ShakeEvents;
 import com.android.settings.liquid.QuietHours;
 import com.android.settings.liquid.themes.ThemeEnabler;
 import com.android.settings.profiles.AppGroupConfig;
@@ -467,7 +466,6 @@ public class Settings extends PreferenceActivity
         BatteryIconStyle.class.getName(),
         DisplayRotation.class.getName(),
         ApnSettings.class.getName(),
-        ShakeEvents.class.getName(),
         ThemeSettings.class.getName()
     };
 
@@ -743,6 +741,16 @@ public class Settings extends PreferenceActivity
                 }
             } else if (id == R.id.account_add) {
                 if (um.hasUserRestriction(UserManager.DISALLOW_MODIFY_ACCOUNTS)) {
+                    target.remove(i);
+                }
+            }  else if (id == R.id.equalizer_settings) {
+                // Embedding into Settings only if app exists (user could manually remove it)
+                boolean supported = false;
+                try {
+                    supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 18);
+                } catch (PackageManager.NameNotFoundException e) {
+                }
+                if (!supported) {
                     target.remove(i);
                 }
             }
@@ -1354,6 +1362,5 @@ public class Settings extends PreferenceActivity
     public static class BatteryIconStyleSettingsActivity extends Settings { /* empty */ }
     public static class DisplayRotationSettingsActivity extends Settings { /* empty */ }
     public static class RamBarActivity extends Settings { /* empty */ }
-    public static class ShakeEventsSettingsActivity extends Settings { /* empty */ }
     public static class ThemeSettingsActivity extends Settings { /* empty */ }
 }

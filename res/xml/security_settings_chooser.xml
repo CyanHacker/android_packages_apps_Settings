@@ -25,11 +25,6 @@
             android:title="@string/lockgesture_settings_enable_visible_pattern_title"/>
 
         <PreferenceScreen
-            android:fragment="com.android.settings.liquid.KeyguardShakeEvents"
-            android:key="shake_events"
-            android:title="@string/shake_events_title" />
-
-        <PreferenceScreen
             android:key="unlock_set_or_change"
             android:title="@string/unlock_set_unlock_launch_picker_title"
             android:summary="@string/unlock_set_unlock_mode_none"
