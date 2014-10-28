@@ -64,12 +64,4 @@
         android:title="@string/notification_drawer_title"
         android:summary="@string/notification_drawer_summary"
         android:fragment="com.android.settings.liquid.NotificationDrawer" />
-
-    <!-- Peek -->
-    <PreferenceScreen
-        android:key="notification_peek"
-        android:fragment="com.android.settings.liquid.PeekSettings"
-        android:title="@string/notification_peek_title"
-        android:summary="@string/notification_peek_summary" />
-
 </PreferenceScreen>

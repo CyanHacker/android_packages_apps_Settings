@@ -363,9 +363,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
     private void disablePref() {
         ContentResolver resolver = getActivity().getContentResolver();
         boolean enabled = Settings.System.getInt(resolver,
-                Settings.System.PEEK_STATE, 0) == 1||
-                  (Settings.System.getInt(resolver,
-                  Settings.System.LOCKSCREEN_NOTIFICATIONS_POCKET_MODE, 0) == 1);
+                  Settings.System.LOCKSCREEN_NOTIFICATIONS_POCKET_MODE, 0) == 1;
         if (enabled) {
             Settings.System.putInt(resolver,
                 Settings.System.ENABLE_ACTIVE_DISPLAY, 0);
