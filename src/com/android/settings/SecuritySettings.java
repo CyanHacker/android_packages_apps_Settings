@@ -753,23 +753,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             int id = getArguments().getInt("id");
-            switch (id) {
-                    .setPositiveButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            ChooseLockSettingsHelper helper =
-                                    new ChooseLockSettingsHelper(
-                                    getOwner().getActivity(), getOwner());
-                            if (!helper.launchConfirmationActivity(
-                                    getOwner().CONFIRM_EXISTING_FOR_TEMPORARY_INSECURE,
-                                    null, null)) {
-                                // We just want the return data here
-                                // this boolean may return something useful one day.
-                            }
-                        }
-                    })
-                    .create();
-            }
             throw new IllegalArgumentException("unknown id " + id);
         }
 
