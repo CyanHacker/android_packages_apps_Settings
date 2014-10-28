@@ -21,6 +21,23 @@
     <!-- WIRELESS and NETWORKS -->
     <header android:id="@+id/wireless_section"
         android:title="@string/header_category_wireless_networks" />
+        
+    <!-- Wifi -->
+    <header
+        android:id="@+id/wifi_settings"
+        android:fragment="com.android.settings.wifi.WifiSettings"
+        android:title="@string/wifi_settings_title"
+        android:icon="@drawable/ic_settings_wireless" />  
+        
+    <!-- Mobile networks -->
+    <header
+        android:id="@+id/mobile_network_settings"
+        android:icon="@drawable/ic_settings_mobilenetworks"
+        android:title="@string/network_settings_title"
+        android:dependency="toggle_airplane">
+        <intent
+            android:action="android.settings.DATA_ROAMING_SETTINGS" />
+    </header>    
 
     <!-- Bluetooth -->
     <header
@@ -35,23 +52,6 @@
         android:icon="@drawable/ic_settings_location"
         android:title="@string/location_settings_title"
         android:id="@+id/location_settings" />
-
-    <!-- Mobile networks -->
-    <header
-        android:id="@+id/mobile_network_settings"
-        android:icon="@drawable/ic_settings_mobilenetworks"
-        android:title="@string/network_settings_title"
-        android:dependency="toggle_airplane">
-        <intent
-            android:action="android.settings.DATA_ROAMING_SETTINGS" />
-    </header>
-
-    <!-- Wifi -->
-    <header
-        android:id="@+id/wifi_settings"
-        android:fragment="com.android.settings.wifi.WifiSettings"
-        android:title="@string/wifi_settings_title"
-        android:icon="@drawable/ic_settings_wireless" />
 
     <!-- Data Usage -->
     <header
@@ -78,22 +78,16 @@
 
     <!-- GENERAL -->
     <header android:id="@+id/general_section"
-        android:title="@string/general_category_title" />
+        android:title="@string/cyanhacker_title" />
 
-    <!-- Main LiquidSmooth Settings -->
+    <!-- Main CyanHacker Settings -->
     <header
         settings:includeXmlForSearch="@xml/liquid_main_settings"
         android:id="@+id/main_settings"
         android:title="@string/liquid_settings_title"
         android:fragment="com.android.settings.liquid.MainSettings"
-        android:icon="@drawable/ic_liquid_theme_settings" />
+        android:icon="@drawable/ic_romco" />
 
-    <!-- Profiles -->
-    <header
-        android:id="@+id/profiles_settings"
-        android:icon="@drawable/ic_settings_profiles"
-        android:fragment="com.android.settings.profiles.ProfilesSettings"
-        android:title="@string/profiles_settings_title" />
 
     <!-- Total blackout -->
     <header
@@ -110,7 +104,17 @@
         android:breadCrumbTitle="@string/themes_settings_title"
         android:fragment="com.android.settings.ThemeSettings"
         android:icon="@drawable/prd_ic_themepacks" />
-
+		
+	<!-- Wallpaper -->  
+    <header 
+        android:icon="@drawable/ic_wallpaper"
+        android:title="@string/wallpaper">
+    <intent 
+        android:targetPackage="com.musenkishi.wally" 
+        android:action="android.intent.action.MAIN" 
+        android:targetClass="com.musenkishi.wally.activities.MainActivity" />
+	</header> 
+	
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
@@ -191,7 +195,14 @@
         android:icon="@drawable/ic_settings_security"
         android:title="@string/security_settings_title"
         android:id="@+id/security_settings" />
-
+        
+    <!-- Profiles -->
+    <header
+        android:id="@+id/profiles_settings"
+        android:icon="@drawable/ic_settings_profiles"
+        android:fragment="com.android.settings.profiles.ProfilesSettings"
+        android:title="@string/profiles_settings_title" />
+    
     <!-- Language -->
     <header
         settings:includeXmlForSearch="@xml/language_settings"
@@ -199,6 +210,21 @@
         android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings"
         android:icon="@drawable/ic_settings_language"
         android:title="@string/language_settings" />
+        
+    <!-- Accessibility feedback -->
+    <header
+        settings:includeXmlForSearch="@xml/accessibility_settings"
+        android:id="@+id/accessibility_settings"
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        android:icon="@drawable/ic_settings_accessibility"
+        android:title="@string/accessibility_settings" />
+
+    <!-- Print -->
+    <header
+        android:id="@+id/print_settings"
+        android:fragment="com.android.settings.print.PrintSettingsFragment"
+        android:icon="@*android:drawable/ic_print"
+        android:title="@string/print_settings" />   
 
     <!-- Backup and reset -->
     <header
@@ -232,21 +258,6 @@
         android:icon="@drawable/ic_settings_date_time"
         android:title="@string/date_and_time_settings_title" />
 
-    <!-- Accessibility feedback -->
-    <header
-        settings:includeXmlForSearch="@xml/accessibility_settings"
-        android:id="@+id/accessibility_settings"
-        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
-        android:icon="@drawable/ic_settings_accessibility"
-        android:title="@string/accessibility_settings" />
-
-    <!-- Print -->
-    <header
-        android:id="@+id/print_settings"
-        android:fragment="com.android.settings.print.PrintSettingsFragment"
-        android:icon="@*android:drawable/ic_print"
-        android:title="@string/print_settings" />
-
     <!-- Development -->
     <header
         settings:includeXmlForSearch="@xml/development_prefs"
@@ -254,6 +265,17 @@
         android:fragment="com.android.settings.DevelopmentSettings"
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
+        
+    <!-- Trickster Mod -->
+    <header
+        android:id="@+id/trickster"
+        android:title="@string/trickster_title"
+        android:icon="@drawable/ic_liquid_performance" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.bigeyes0x0.trickstermod.main.ActivityTricksterMod"
+            android:targetPackage="com.bigeyes0x0.trickstermod" />
+    </header>    
 
     <!-- About Device -->
     <header
