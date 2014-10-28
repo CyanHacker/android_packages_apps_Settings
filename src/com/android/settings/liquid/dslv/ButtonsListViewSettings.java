@@ -713,9 +713,6 @@ public class ButtonsListViewSettings extends ListFragment implements
                     }
                     finalHelpMessage = res.getString(
                         R.string.shortcut_action_help_main, buttonMode, icon);
-                    if (!getOwner().mDisableDeleteLastEntry) {
-                        finalHelpMessage += " " + res.getString;
-                    }
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.help_label)
                     .setMessage(finalHelpMessage)
@@ -865,9 +862,6 @@ public class ButtonsListViewSettings extends ListFragment implements
             }
             throw new IllegalArgumentException("unknown id " + id);
         }
-
-        @Override
-        public void onCancel(DialogInterface dialog);
 
         public class IconAdapter extends BaseAdapter {
 

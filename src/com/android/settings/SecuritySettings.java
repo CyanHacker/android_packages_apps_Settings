@@ -754,16 +754,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             int id = getArguments().getInt("id");
             switch (id) {
-                case DLG_SHAKE_WARN:
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.shake_to_secure_dlg_title)
-                    .setMessage(R.string.shake_to_secure_dlg_message)
-                    .setNegativeButton(R.string.cancel,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            disableShakeLock();
-                        }
-                    })
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
@@ -787,21 +777,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
         public void onCancel(DialogInterface dialog) {
             int id = getArguments().getInt("id");
             switch (id) {
-                case DLG_SHAKE_WARN:
-                    disableShakeLock();
-                    break;
                 default:
                     // N/A at the moment
-            }
-        }
-
-        private void disableShakeLock() {
-            if (getOwner().mShakeToSecure != null
-                    && getOwner().mShakeTimer != null) {
-                Settings.Secure.putInt(getActivity().getContentResolver(),
-                        Settings.Secure.LOCK_SHAKE_TEMP_SECURE, 0);
-                getOwner().mShakeToSecure.setValue(String.valueOf(0));
-                getOwner().mShakeTimer.setEnabled(false);
             }
         }
     }
