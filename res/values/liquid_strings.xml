@@ -2482,6 +2482,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pulldown_title">Pulldown</string>
     <string name="pulldown_summary">Multitasking</string> 
 	<string name="animation_settings_title">Animation settings</string> 
+	<string name="slimrecentscatergory">Slim recents</string> 
+	<string name="omnirecentscatergory">Omni recents/string> 
+	<string name="aosprecentscatergory">AOSP recents</string> 
 	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>

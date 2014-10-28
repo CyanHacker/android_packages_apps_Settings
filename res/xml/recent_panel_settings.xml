@@ -18,6 +18,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/recent_panel_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+	<PreferenceCategory
+            android:title="@string/slimrecentscatergory" >
 
     <CheckBoxPreference
         android:key="custom_recent_mode"
@@ -25,11 +28,7 @@
         android:summary="@string/custom_recent_summary"
         android:persistent="false" />
         
-     <!--<PreferenceScreen
-        android:key="omni_recent"
-        android:title="@string/omni_recent"
-        android:summary="@string/omni_recent_summary"
-        android:fragment="com.android.settings.liquid.OmniSwitch" />  --> 
+     
 
     <ListPreference
         android:key="recent_panel_expanded_mode"
@@ -69,7 +68,23 @@
         android:defaultValue="0x00ffffff"
         alphaSlider="true"
         android:dependency="custom_recent_mode" />
+		
+	</PreferenceCategory>	
 
+	<!--<PreferenceCategory
+            android:title="@string/omnirecentscatergory" >
+			
+	<PreferenceScreen
+        android:key="omni_recent"
+        android:title="@string/omni_recent"
+        android:summary="@string/omni_recent_summary"
+        android:fragment="com.android.settings.liquid.OmniSwitch" />
+
+    </PreferenceCategory>-->		
+	
+	<PreferenceCategory
+            android:title="@string/aosprecentscatergory" >
+	
     <CheckBoxPreference
         android:key="recent_menu_clear_all"
         android:title="@string/show_recent_clear_all_button_title"
@@ -84,10 +99,6 @@
         android:entryValues="@array/recent_clear_all_button_location_values"
         android:defaultValue="2"
         android:dependency="recent_menu_clear_all" />
-
-    <PreferenceCategory
-        android:key="ram_bar_mode_cat"
-        android:title="@string/ram_bar_mode_title">
 
         <ListPreference
             android:key="ram_bar_mode"
@@ -111,12 +122,12 @@
             android:title="@string/ram_bar_color_total_mem_color"
             android:defaultValue="0xffaaaaaa" />
 
-    </PreferenceCategory>
-
     <Preference
         style="?android:preferenceInformationStyle"
         android:title="@string/ram_bar_note_title"
         android:summary="@string/ram_bar_note_summary"
         android:selectable="false" />
-
+    
+    </PreferenceCategory>
+	
 </PreferenceScreen>
