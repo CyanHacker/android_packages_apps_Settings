@@ -67,6 +67,14 @@
         android:title="@string/statusbar_settings_title"
         android:fragment="com.android.settings.liquid.StatusBarSettings"
         android:icon="@drawable/ic_liquid_statusbar" />
+		
+	<!-- Pulldown -->
+    <PreferenceScreen
+        settings:includeXmlForSearch="@xml/notification_drawer"
+        android:id="@+id/notification_drawer"
+        android:title="@string/pulldown_title"
+        android:summary="@string/pulldown_summary"
+        android:fragment="com.android.settings.liquid.NotificationDrawer" />	
 
     <!-- Advanced options -->
     <PreferenceScreen
