@@ -109,8 +109,8 @@
             android:requiredForAllUsers="true"
             android:supportsRtl="true">
 
-        <uses-library android:name="org.cyanogenmod.hardware" required="false" />
-
+		<uses-library android:name="org.cyanogenmod.hardware" required="false" />	
+			
         <receiver
             android:name=".cyanogenmod.ProtectedAppsReceiver"
             android:permission="cyanogenmod.permission.PROTECTED_APP">
@@ -1999,19 +1999,6 @@
                 android:value="com.android.settings.CryptKeeperSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
-        </activity>
-
-        <!-- Pseudo-activity used to provide an intent-filter entry to shake event settings -->
-        <activity android:name="Settings$ShakeEventsSettingsActivity"
-                android:label="@string/shake_events_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.liquid.ShakeEvents" />
         </activity>
 
         <activity android:name="Settings$DataUsageSummaryActivity"
