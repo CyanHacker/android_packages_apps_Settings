@@ -62,7 +62,6 @@ import static com.android.internal.util.liquid.QSConstants.TILE_REBOOT;
 import static com.android.internal.util.liquid.QSConstants.TILE_FCHARGE;
 import static com.android.internal.util.liquid.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.liquid.QSConstants.TILE_PROFILE;
-import static com.android.internal.util.liquid.QSConstants.TILE_HOVER;
 import static com.android.internal.util.liquid.QSConstants.TILE_REMOTEDISPLAY;
 
 import android.content.ContentResolver;
@@ -197,9 +196,6 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_PROFILE, R.string.title_tile_profile,
                 "com.android.systemui:drawable/ic_qs_profiles"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_HOVER, R.string.title_tile_hover,
-                "com.android.systemui:drawable/ic_qs_hover_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NETWORKADB, R.string.title_tile_network_adb,
                 "com.android.systemui:drawable/ic_qs_network_adb_off"));

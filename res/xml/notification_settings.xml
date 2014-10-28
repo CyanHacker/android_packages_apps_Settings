@@ -50,13 +50,6 @@
         android:summary="@string/heads_up_summary"
         android:fragment="com.android.settings.liquid.HeadsUp" />
 
-    <!-- Hover -->
-    <PreferenceScreen
-        android:key="hover_settings"
-        android:title="@string/hover_title"
-        android:summary="@string/hover_summary"
-        android:fragment="com.android.settings.liquid.HoverSettings" />
-
     <!-- LockScreen Notifications -->
     <PreferenceScreen
         android:key="lockscreen_notifications"

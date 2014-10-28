@@ -133,7 +133,7 @@ public class InstalledAppDetails extends Fragment
     private View mScreenCompatSection;
     private CheckBox mAskCompatibilityCB;
     private CheckBox mEnableCompatibilityCB;
-    private CheckBox mHaloBlacklist, mPeekBlacklist, mFloatingBlacklist, mHoverBlacklist;
+    private CheckBox mHaloBlacklist, mPeekBlacklist, mFloatingBlacklist;
     private boolean mCanClearData = true;
     private TextView mAppVersion;
     private TextView mTotalSize;
@@ -433,7 +433,7 @@ public class InstalledAppDetails extends Fragment
     private void initBlacklistButton() {
         mBlacklistButton.setText(R.string.blacklist_button_title);
 
-        boolean allowedForHalo = true, allowedForPeek = true, allowedForFloating = true, allowedForHover = true;
+        boolean allowedForHalo = true, allowedForPeek = true, allowedForFloating = true;
         try {
             allowedForHalo = mNotificationManager
                     .isPackageAllowedForHalo(mAppEntry.info.packageName);
@@ -441,8 +441,6 @@ public class InstalledAppDetails extends Fragment
                     .isPackageAllowedForPeek(mAppEntry.info.packageName);
             allowedForFloating = mNotificationManager
                     .isPackageAllowedForFloatingMode(mAppEntry.info.packageName);
-            allowedForHover = mNotificationManager
-                    .isPackageAllowedForHover(mAppEntry.info.packageName);
         } catch (android.os.RemoteException ex) {
             // uh oh
         }
@@ -452,8 +450,6 @@ public class InstalledAppDetails extends Fragment
         mPeekBlacklist.setOnCheckedChangeListener(this);
         mFloatingBlacklist.setChecked(!allowedForFloating);
         mFloatingBlacklist.setOnCheckedChangeListener(this);
-        mHoverBlacklist.setChecked(!allowedForHover);
-        mHoverBlacklist.setOnCheckedChangeListener(this);
 
         mBlacklistButton.setOnClickListener(this);
     }
@@ -594,7 +590,6 @@ public class InstalledAppDetails extends Fragment
         mHaloBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.halo_blacklist);
         mPeekBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.peek_blacklist);
         mFloatingBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.floating_blacklist);
-        mHoverBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.hover_blacklist);
 
         return view;
     }
@@ -1419,7 +1414,6 @@ public class InstalledAppDetails extends Fragment
                     final boolean tempHalo = getOwner().getHaloState();
                     final boolean tempPeek = getOwner().getPeekState();
                     final boolean tempFloating = getOwner().getFloatingModeState();
-                    final boolean tempHover = getOwner().getHoverState();
                     AlertDialog dialog = new AlertDialog.Builder(getActivity())
                             .setTitle(getActivity().getText(R.string.blacklist_button_title))
                             .setView(mBlacklistDialogView)
@@ -1438,7 +1432,6 @@ public class InstalledAppDetails extends Fragment
                                         getOwner().setHaloState(tempHalo);
                                         getOwner().setPeekState(tempPeek);
                                         getOwner().setFloatingModeState(tempFloating);
-                                        getOwner().setHoverState(tempHover);
                                         ((ViewGroup)mBlacklistDialogView.getParent())
                                             .removeView(mBlacklistDialogView);
                                     }
@@ -1582,20 +1575,6 @@ public class InstalledAppDetails extends Fragment
         return mFloatingBlacklist.isChecked();
     }
 
-    private void setHoverState(boolean state) {
-        if(getHoverState() != state)
-            mHoverBlacklist.setChecked(state); // needed when Hover state is set manually
-        try {
-            mNotificationManager.setHoverBlacklistStatus(mAppEntry.info.packageName, state);
-        } catch (android.os.RemoteException ex) {
-            mHoverBlacklist.setChecked(!state); // revert
-        }
-    }
-
-    private boolean getHoverState() {
-        return mHoverBlacklist.isChecked();
-    }
-
     private int getPremiumSmsPermission(String packageName) {
         try {
             if (mSmsManager != null) {
@@ -1706,8 +1685,6 @@ public class InstalledAppDetails extends Fragment
             setPeekState(isChecked);
         } else if (buttonView == mFloatingBlacklist) {
             setFloatingModeState(isChecked);
-        } else if (buttonView == mHoverBlacklist) {
-            setHoverState(isChecked);
         } else if (buttonView == mHeadsUpSwitch) {
             mPm.setHeadsUpSetting(packageName, isChecked);
         }
