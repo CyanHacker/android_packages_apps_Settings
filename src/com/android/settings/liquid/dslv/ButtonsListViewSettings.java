@@ -714,7 +714,7 @@ public class ButtonsListViewSettings extends ListFragment implements
                     finalHelpMessage = res.getString(
                         R.string.shortcut_action_help_main, buttonMode, icon);
                     if (!getOwner().mDisableDeleteLastEntry) {
-                        finalHelpMessage += " " + res.getString(
+                        finalHelpMessage += " " + res.getString;
                     }
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.help_label)
@@ -867,9 +867,7 @@ public class ButtonsListViewSettings extends ListFragment implements
         }
 
         @Override
-        public void onCancel(DialogInterface dialog) {
-
-        }
+        public void onCancel(DialogInterface dialog);
 
         public class IconAdapter extends BaseAdapter {
 
