@@ -35,7 +35,6 @@
     <string name="saturday">Saturday</string>
 
     <!-- Mod version -->
-    <string name="mod_version">CyanHacker version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- Build date -->
@@ -55,8 +54,7 @@
 
     <!-- Category titles -->
     <string name="additional_category_title">Additional</string>
-    <string name="cyanhacker_title">CyanHacker</string>
-   <string name="general_category_title">General</string>
+    <string name="general_category_title">General</string>
 
     <!-- General settings -->
     <string name="equalizer_settings_title">Equalizer</string>
@@ -71,7 +69,6 @@
     <string name="active_display_title">Active display</string>
     <string name="halo_options_title">Halo options</string>
     <string name="notification_drawer_title">Notification drawer</string>
-    <string name="pie_control_title">Slim pie controls</string>
     <string name="theme_settings_title">Total blackout</string>
 
     <!-- Device settings -->
@@ -264,27 +261,6 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_toggle_info">Automatic brightness is enabled</string>
-
-    <!-- Shake Events -->
-    <string name="shake_events_title">Shake events</string>
-    <string name="shake_events_summary">Use different shake events to perform actions</string>
-    <string name="shake_events_enabled_title">Enable shake listener</string>
-    <string name="shake_events_normal_title">Active shake events</string>
-    <string name="shake_events_disabled_title">Disabled apps</string>
-    <string name="shake_events_disabled_summary">Shake disabled while using these apps</string>
-    <string name="shake_event_x_title">When shaken horizontally</string>
-    <string name="shake_event_y_title">When shaken vertically</string>
-    <string name="shake_event_z_title">When shaken back-and-forth</string>
-
-    <!-- Shake sensitivity -->
-    <string name="shake_sensitivity_title">Shake sensitivity</string>
-    <string name="shake_sensitivity_summary">Global sensitivity of shake preferences</string>
-    <string name="shake_sensitivity_even_less_sensitive">Very insensitive</string>
-    <string name="shake_sensitivity_less_sensitive">Less sensitive</string>
-    <string name="shake_sensitivity_more_sensitive">More sensitive</string>
-    <string name="shake_sensitivity_very_sensitive">Very sensitive</string>
-    <string name="shake_sensitivity_super_sensitive">Super sensitive</string>
-    <string name="shake_sensitivity_ultra_sensitive">Ultra sensitive</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
@@ -910,22 +886,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lock_numpad_random_always">Always</string>
     <string name="lock_numpad_random_on_request">On request</string>
 
-    <!-- Shake to secure -->
-    <string name="shake_to_secure_title">Shake to secure</string>
-    <string name="shake_to_secure_summary">Security is disabled after each unlock</string>
-    <string name="shake_to_secure_dlg_title">Warning:</string>
-    <string name="shake_to_secure_dlg_message">Your device will be insecure until you explicitly shake to enable a temporary secure lock.  Once secure: if your device is successfully unlocked it will become insecure until you shake again.</string>
-    <string name="shake_secure_timeout_title">Automatically resecure</string>
-    <string name="shake_all">Shake any direction</string>
-    <string name="shake_horizontal">Shake horizontally</string>
-    <string name="shake_vertical">Shake vertically</string>
-    <string name="shake_back_forth">Shake back-and-forth</string>
-    <string name="shake_secure_timeout_disabled">Never automatically secure</string>
-    <string name="shake_secure_timeout_1min">1 minute after screen turned off</string>
-    <string name="shake_secure_timeout_5min">5 minutes after screen turned off</string>
-    <string name="shake_secure_timeout_10min">10 minutes after screen turned off</string>
-    <string name="shake_secure_timeout_30min">30 minutes after screen turned off</string>
-
     <!-- Lock before unlock -->
     <string name="lock_before_unlock_title">Lock before unlock</string>
     <string name="lock_before_unlock_summary">Show slider target before secure unlock</string>
@@ -1004,7 +964,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="title_tile_music">Music</string>
     <string name="title_tile_reboot">Reboot</string>
     <string name="title_tile_theme">Theme switcher</string>
-    <string name="title_tile_shake">Shake events</string>
     <string name="title_tile_fcharge">Fast charge</string>
     <string name="title_tile_onthego">On-The-Go</string>
     <string name="dynamic_tile_ime_switcher">IME switcher</string>
@@ -1029,7 +988,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="custom_tile_null_warning">An action must be set first</string>
     <string name="custom_tile_resolve_name">Unknown</string>
     <string name="title_tile_profile">Profile</string>
-    <string name="title_tile_hover">Hover</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Tile style</string>
@@ -1278,57 +1236,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="usb_mass_storage_title">Mass storage</string>
     <string name="usb_mass_storage_summary">Enable USB mass storage</string>
 
-    <!-- Slim Pie Control -->
-    <string name="pie_control_summary">Enable pie controls</string>
-    <string name="pie_summary">Configure or view current slim pie settings</string>
-    <string name="pie_control_size">Navigation size</string>
-    <string name="pie_control_trigger_positions">Trigger options</string>
-    <string name="pie_control_trigger_left">Trigger left screen border</string>
-    <string name="pie_control_trigger_bottom">Trigger bottom screen border</string>
-    <string name="pie_control_trigger_right">Trigger right screen border</string>
-    <string name="pie_control_trigger_top">Trigger top screen border</string>
-    <string name="pie_control_trigger_top_summary">Top pie does not show status info</string>
-    <string name="pie_button_style">Buttons style</string>
-    <string name="pie_button_color_title">Button color</string>
-    <string name="pie_button_alpha_title">Button transparency</string>
-    <string name="pie_button_outline_color_title">Button outline color</string>
-    <string name="pie_button_pressed_color_title">Button pressed color</string>
-    <string name="pie_button_long_pressed_color_title">Button long pressed color</string>
-    <string name="pie_button_pressed_alpha_title">Button pressed transparency</string>
-    <string name="pie_icon_style">Button icon style</string>
-    <string name="pie_icon_color_title">Button icon color</string>
-    <string name="pie_icon_color_mode_title">Button icon color mode</string>
-    <string name="pie_icon_color_mode_dialog_title">Colorize</string>
-    <string name="pie_icon_color_mode_summary">Change the button icon color mode</string>
-    <string name="pie_trigger_note_title">Note</string>
-    <string name="pie_trigger_note_summary">To avoid conflicts with status bar or navigation bar, the triggers on these edges are turned off if one or both are available</string>
-    <string name="pie_background_color_title">Background color</string>
-    <string name="pie_snap_color_title">Snap point color</string>
-    <string name="pie_text_color_title">Text color</string>
-    <string name="pie_background_alpha_title">Background transparency</string>
-    <string name="pie_mirror_right_title">Mirror right pie</string>
-    <string name="pie_mirror_right_summary">Mirror right pie on the horizontal axis</string>
-    <string name="pie_style">Style and dimension</string>
-    <string name="pie_style_title">Style</string>
-    <string name="pie_dimens_title">Dimension</string>
-    <string name="pie_show_snap_title">Show snap points</string>
-    <string name="pie_show_snap_summary">Change the trigger edge dynamically</string>
-    <string name="pie_show_text_title">Show status and clock</string>
-    <string name="pie_show_text_summary">Shows status, time and date info</string>
-    <string name="pie_show_background_title">Show background</string>
-    <string name="pie_show_background_summary">Enable pie background screen</string>
-    <string name="pie_button">Buttons</string>
-    <string name="pie_button_second_layer">Buttons second layer</string>
-    <string name="pie_button_second_layer_summary">Change second layer buttons</string>
-    <string name="pie_button_style_summary">Change pie button style</string>
-    <string name="pie_style_reset_message">Reset style entries to default?</string>
-    <string name="pie_warning_no_navigation_present">No other navigation is currently enabled. Turning off pie controls can result in an unusable device. Do you want to enable navigation bar instead?</string>
-    <string name="pie_trigger_warning">Minimum one of the main triggers (bottom, left or right) needs to be enabled.</string>
-    <string name="pie_disable_ime_triggers_title">Trigger size on keyboard</string>
-    <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size</string>
-    <string name="pie_trigger_sensitivity_title">Trigger sensitivity"</string>
-    <string name="pie_trigger_sensitivity_summary">Adjust the pie trigger sensitivity</string>
-
     <!-- PA PIE -->
     <string name="pa_pie_controls_title">PA pie controls</string>
     <string name="pa_pie_controls_summary">Configure or view current pa pie settings</string>
@@ -1516,7 +1423,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="ad_pocket_mode_off">Off</string>
     <string name="ad_pocket_mode_notifications">Notifications only</string>
     <string name="ad_pocket_mode_always">Always</string>
-    <string name="ad_disabled_summary">Active Display is currently disabled, to re-enable turn off Peek and Lockscreen notification pocket mode</string>
+    <string name="ad_disabled_summary">Active Display is currently disabled, to re-enable turn off Lockscreen notification pocket mode</string>
 
     <!-- Bluetooth accept all Filestypes -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
@@ -1617,7 +1524,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_notification_summary">Show current pending notifications</string>
     <string name="pocket_mode">Pocket mode</string>
     <string name="pocket_mode_summary">Screen on and show notifications</string>
-    <string name="pocket_mode_disabled_summary">Pocket mode is currently disabled, to re-enable turn off Active Display and Peek</string>
+    <string name="pocket_mode_disabled_summary">Pocket mode is currently disabled, to re-enable turn off Active Display</string>
     <string name="show_always">Show always</string>
     <string name="show_always_summary">Screen on when removed from pocket</string>
     <string name="hide_low_priority">Hide low priority</string>
@@ -1946,19 +1853,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="battery_around_ring_title">Battery around ring</string>
     <string name="battery_around_ring_summary">Display battery level around unlock ring</string>
 
-    <!--Notification peek-->
-    <string name="notification_peek_title">Notification peek</string>
-    <string name="notification_peek_summary">Show notifications by picking up device</string>
-    <string name="peek_pickup_timeout_title">Peek pickup timeout</string>
-    <string name="peek_pickup_10seconds">10 seconds (default)</string>
-    <string name="peek_pickup_30seconds">30 seconds</string>
-    <string name="peek_pickup_45seconds">45 seconds</string>
-    <string name="peek_pickup_60seconds">1 minute</string>
-    <string name="peek_pickup_120seconds">2 minutes</string>
-    <string name="notification_peek_time_title">Peek time</string>
-    <string name="notification_peek_time_summary">How long to display peeked notification</string>
-    <string name="notification_peek_disabled_summary">Peek is currently disabled, to re-enable turn off Active Display and Lockscreen Notification pocket mode</string>
-
     <!-- Lock screen gestures -->
     <string name="lockgesture_change_lock_pattern_label">Change unlock gesture</string>
     <string name="lockgesture_change_lock_pin_label">Change unlock PIN</string>
@@ -2083,37 +1977,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="blacklist_button_title">Blacklist</string>
     <string name="floating_blacklist_label">Blacklist from Floating Mode</string>
     <string name="halo_blacklist_label">Blacklist from Halo</string>
-    <string name="hover_blacklist_label">Blacklist from Hover</string>
-    <string name="peek_blacklist_label">Blacklist from Peek</string>
-
-    <!-- Hover settings -->
-    <string name="hover_title">Hover settings</string>
-    <string name="hover_summary">Enables and customize hover notifications</string>
-    <string name="hover_hide_button_title">Hide button</string>
-    <string name="hover_hide_button_summary">Hide the hover button in status bar</string>
-    <string name="hover_active_title">Activate Hover</string>
-    <string name="hover_active_summary">Use hover and hide status bar button</string>
-    <string name="hover_exclude_low_priority_title">Exclude low priority</string>
-    <string name="hover_exclude_low_priority_summary">Notifications marked as low priority</string>
-    <string name="hover_exclude_non_clearable_title">Exclude non-clearable</string>
-    <string name="hover_exclude_non_clearable_summary">Notifications marked as non clearable</string>
-    <string name="hover_require_fullscreen_mode_title">Require expanded desktop</string>
-    <string name="hover_require_fullscreen_mode_summary">Only show when status bar is hidden</string>
-    <string name="hover_exclude_topmost_title">Exclude topmost app</string>
-    <string name="hover_exclude_topmost_summary">Exclude from the foreground app</string>
-    <string name="hover_exclude_from_lock_screen_title">Disable on lock screen</string>
-    <string name="hover_exclude_from_lock_screen_summary">Hide notifications on lock screen</string>
-    <string name="hover_long_fadeout_title">Hover notification time</string>
-    <string name="hover_long_fadeout_3seconds">3 seconds</string>
-    <string name="hover_long_fadeout_5seconds">5 seconds (default)</string>
-    <string name="hover_long_fadeout_7seconds">7 seconds</string>
-    <string name="hover_long_fadeout_10seconds">10 seconds</string>
-    <string name="hover_long_fadeout_15seconds">15 seconds</string>
-
-    <!-- Hover instant fade out delay -->
-    <string name="hover_micro_fadeout_title">Hover touch to hide</string>
-    <string name="hover_micro_fadeout_stock">Normal</string>
-    <string name="hover_micro_fadeout_instant">Instant</string>
 
     <!-- Liquid Extra Info -->
     <string name="lsextrainfo">Extra information</string>
@@ -2484,7 +2347,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 	<string name="animation_settings_title">Animation settings</string> 
 	<string name="slimrecentscatergory">Slim recents</string> 
 	<string name="omnirecentscatergory">Omni recents/string> 
-	<string name="aosprecentscatergory">AOSP recents</string> 
+	<string name="aosprecentscatergory">AOSP recents</string> 	
+    <string name="cyanhacker_title">CyanHacker</string>	
+    <string name="mod_version">CyanHacker version</string>
 	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
