@@ -24,6 +24,12 @@
         android:title="@string/custom_recent_title"
         android:summary="@string/custom_recent_summary"
         android:persistent="false" />
+        
+     <!--<PreferenceScreen
+        android:key="omni_recent"
+        android:title="@string/omni_recent"
+        android:summary="@string/omni_recent_summary"
+        android:fragment="com.android.settings.liquid.OmniSwitch" />  --> 
 
     <ListPreference
         android:key="recent_panel_expanded_mode"
