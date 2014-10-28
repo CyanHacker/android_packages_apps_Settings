@@ -40,13 +40,6 @@
         android:summary="@string/button_keys_summary"
         android:fragment="com.android.settings.liquid.HardwareKeysSettings" />
 
-    <!-- Slim Pie control -->
-    <PreferenceScreen
-        android:id="@+id/pie_control"
-        android:title="@string/pie_control_title"
-        android:summary="@string/pie_summary"
-        android:fragment="com.android.settings.liquid.PieControl" />
-
     <!-- PA Pie control -->
     <PreferenceScreen
         android:key="pa_pie_control"

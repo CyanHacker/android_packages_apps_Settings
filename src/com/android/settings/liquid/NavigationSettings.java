@@ -242,8 +242,6 @@ public class NavigationSettings extends SettingsPreferenceFragment
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getActivity().getContentResolver(),
-                                    Settings.System.PIE_CONTROLS, 1);
-                            Settings.System.putInt(getActivity().getContentResolver(),
                                     Settings.System.NAVIGATION_BAR_SHOW, 0);
                             getOwner().updateNavbarPreferences(false);
                         }
