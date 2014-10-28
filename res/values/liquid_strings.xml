@@ -11,8 +11,8 @@
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
-     limitations under the License.
--->
+     limitations under the License.-->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- General strings -->
@@ -35,7 +35,7 @@
     <string name="saturday">Saturday</string>
 
     <!-- Mod version -->
-    <string name="mod_version">LiquidSmooth version</string>
+    <string name="mod_version">CyanHacker version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- Build date -->
@@ -55,14 +55,15 @@
 
     <!-- Category titles -->
     <string name="additional_category_title">Additional</string>
-    <string name="general_category_title">General</string>
+    <string name="cyanhacker_title">CyanHacker</string>
+   <string name="general_category_title">General</string>
 
     <!-- General settings -->
     <string name="equalizer_settings_title">Equalizer</string>
     <string name="interface_settings_title">Interface</string>
     <string name="lockscreen_settings_title">Lock screen</string>
     <string name="navigation_settings_title">Navigation</string>
-    <string name="kernel_tweaker_title">Performance</string>
+    <string name="trickster_title">Performance</string>
     <string name="statusbar_settings_title">Status bar</string>
     <string name="notification_settings_title">Notifications</string>
 
@@ -992,7 +993,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="title_tile_wifiap">Wi-Fi AP</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_user">User switcher</string>
-    <string name="title_tile_network_adb">ADB over network</string>
     <string name="title_tile_networkmode">Network mode</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Screen timeout</string>
@@ -1130,7 +1130,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="device_hostname">Device hostname</string>
 
     <!-- Chamber of Secrets -->
-    <string name="chamber_title">Liquid Dungeon</string>
+    <string name="chamber_title">Secret Dungeon</string>
     <string name="chamber_toast">The Dungeon has opened</string>
 
     <!-- Volume Keys Media Control -->
@@ -1605,15 +1605,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
-    <string name="custom_runtime_warning_message">ART is not supported by LiquidSmooth. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART is not supported by this Rom. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
-    <!-- LiquidSmooth Anonymous Stats -->
-    <string name="rominfo_settings_list_item_title">LiquidSmooth Statistics</string>
-    <string name="rominfo_settings_list_item_summary">Help make LiquidSmooth better by opting into anonymous statistics reporting</string>
-
-    <!-- LiquidSmooth Updater -->
-    <string name="liquidsmoothupdate_settings_title">LiquidSmooth Updates</string>
-    <string name="liquidsmoothupdate_settings_summary">Check for, view or install updates</string>
 
     <!-- Vibration multiplier -->
     <string name="vibrator_multiplier_title">Vibration multiplier</string>
@@ -2447,25 +2440,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="heads_up_exclude_from_lock_screen_title">Disable on lock screen</string>
     <string name="heads_up_exclude_from_lock_screen_summary">Hide notifications on lock screen</string>
 
-    <!-- SlimSizer  -->
-    <string name="listsystem">list</string>
-    <string name="sizer_title">System App Remover</string>
-    <string name="caution">Caution!</string>
-    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
-    <string name="cancel">Cancel</string>
-    <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
-    <string name="btn_delete">Delete selected APPs now!</string>
-    <string name="delete_progress_title">Deleting</string>
-    <string name="delete_progress">Selected files are being deleted...</string>
-    <string name="delete_success">Deleted</string>
-    <string name="delete_fail">Unable to delete</string>
-    <string name="btn_profile">Profile</string>
-    <string name="sizer_message_sdnowrite">Cannot write to SD Card.</string>
-    <string name="sizer_message_sdnoread">Cannot read SD Card.</string>
-    <string name="sizer_message_filesuccess">Created profile.</string>
-    <string name="sizer_message_filefail">Failed to create profile.</string>
-    <string name="sizer_message_noselect">Nothing selected.</string>
-
     <!-- Text for disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
@@ -2475,26 +2449,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lock_pattern_size_8">8x8</string>
     <string name="lock_pattern_size_9">9x9</string>
     <string name="lock_pattern_size_10">10x10</string>
-
-    <!-- Download Center -->
-    <string name="download_category">LiquidSmooth Downloads</string>
-    <string name="download_category_summary">Find all of your support needs inside</string>
-    <string name="rom_category">Rom Download</string>
-    <string name="gapps_category">GAPPS Packages</string>
-    <string name="xposed_category">Xposed Framework</string>
-    <string name="lsgapps_title">LiquidSmooth Gapps</string>
-    <string name="lsgapps_summary">LiquidSmooth Gapps are generally recommended gapps for use on LiquidSmooth</string>
-    <string name="ls_official_title">LiquidSmooth Release Builds</string>
-    <string name="ls_official_summary">Link for stable release builds of LiquidSmooth</string>
-    <string name="ls_nightly_title">LiquidSmooth Nightly Builds</string>
-    <string name="ls_nightly_summary">Link for possibly unstable builds</string>
-    <string name="pagapps_title">PA Gapps</string>
-    <string name="pagapps_summary">Fully packed with the majority of GAPPS, these are commonly used by users that do not want to download/install them later</string>
-    <string name="xposed_warning">WARNING</string>
-    <string name="xposed_title">Xposed Installer</string>
-    <string name="xposed_summary">While Xposed is proven to be a very useful tool, some modules may cause issues/bugs in custom ROMs. Please uninstall all modules before reporting any bugs that you may come across while using Xposed.</string>
-    <string name="xposed_mod_title">Module Repository</string>
-    <string name="xposed_mod_summary">Browse and install modules to be used with Xposed Framework</string>
 
     <!-- Partition Info -->
     <string name="partition_info_title">Partition info</string>
@@ -2517,6 +2471,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Device specific settings -->
     <string name="screen_off_gesture_settings_title">Screen off gestures</string>
+    
+    <!-- CyanHacker -->
+    <string name="omniswitch_title">OmniSwitch</string>
+    <string name="omniswitch_summary">Multitasking</string> 
+    <string name="wallpaper">Wallpaper</string>
+    <string name="rom_control">CyanHacker Apps</string>
+    <string name="themestore">Theme Store</string>
 
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
@@ -2538,7 +2499,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Density Changer -->
     <string name="custom_density_title">Custom density</string>
     <string name="set_custom_density_title">Set custom density</string>
-    <string name="set_custom_density_set">Set</string>
+	<string name="set_custom_density_set">Set</string>
     <string name="current_density">"Current density: "</string>
     <string name="new_density">"New density: "</string>
     <string name="density_change_warning">Note: Changing density will close all running apps!</string>
@@ -2550,21 +2511,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">Screen-On Notification Light</string>
     <string name="screen_on_notification_led_summary">Enable Notification Light even when screen is on.</string>
-
-    <!-- Hardware tunables - Color calibration -->
-    <string name="color_calibration_title">Color calibration</string>
-    <string name="color_calibration_summary">Calibrate on-screen colors</string>
-    <string name="color_red_title">Red</string>
-    <string name="color_green_title">Green</string>
-    <string name="color_blue_title">Blue</string>
-
-    <!-- Hardware tunables - Gamma calibration -->
-    <string name="gamma_tuning_title_head">Gamma calibration</string>
-    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
-    <string name="gamma_tuning_control_set_header">Group <xliff:g id="index">%d</xliff:g></string> <!-- used if no name provided by overlay -->
-    <string name="gamma_tuning_contrast">Contrast</string>
-    <string name="gamma_tuning_brightness">Brightness</string>
-    <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- User Selectable Tether Networks-->
     <string name="tether_usb_network_summary">Press to change USB Network</string>
@@ -2595,14 +2541,14 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
     <!-- Statusbar carrier logo-->
-    <string name="disable_carrier_logo">Enable carrier logo</string>
-    <string name="carrier_logo_summary">Shows carrier logo in status bar</string>
+    <string name="disable_carrier_logo">Hide carrier logo</string>
+    <string name="carrier_logo_summary">Hides carrier logo in status bar</string>
 
     <!-- LiquidSmooth Main Settings -->
-    <string name="liquid_settings_title">LiquidSmooth</string>
+    <string name="liquid_settings_title">CyanHacker Control</string>
 
     <!-- LiquidSmooth Sound -->
-    <string name="liquid_sound_title">LiquidSmooth sound</string>
+    <string name="liquid_sound_title">CyanHacker sound</string>
     <string name="liquid_sound_summary">All sound related settings that we have added</string>
 
     <!-- Backlight brightness settings screen -->
@@ -2622,9 +2568,17 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="wifi_ap_client_ap_disabled">Hotspot is disabled</string>
     <string name="wifi_ap_client_none_connected">No devices connected</string>
 
+    <!-- OmniSwitch Recents -->
+    <string name="recents_use_omniswitch_title">Use OmniSwitch</string>
+    <string name="recents_use_omniswitch_summary">Open OmniSwitch when recents button is pressed</string>
+    <string name="omniswitch_start_settings_title">OmniSwitch Settings</string>
+    <string name="omniswitch_start_settings_summary">Open Settings</string>
+    <string name="omni_recent">OmniSwitch</string>
+    <string name="omni_recent_summary">Use OmniSwitch as recents menu</string>
+    <string name="omniswitch_settings_title">OmniSwitch recents</string>
+
     <!-- SAR information -->
     <string name="sar_info">Maximum SAR</string>
     <string name="maximum_head_level">Head: %1$s W/kg</string>
     <string name="maximum_body_level">Body: %1$s W/kg</string>
-
 </resources>
