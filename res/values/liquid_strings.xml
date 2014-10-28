@@ -2479,7 +2479,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="wallpaper">Wallpaper</string>
     <string name="rom_control">CyanHacker Apps</string>
     <string name="themestore">Theme Store</string>
-
+    <string name="pulldown_title">Pulldown</string>
+    <string name="pulldown_summary">Multitasking</string> 
+	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
     <string name="display_color_summary">Customize the hue, saturation, etc</string>
