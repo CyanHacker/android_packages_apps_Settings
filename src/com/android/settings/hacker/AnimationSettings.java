@@ -42,7 +42,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.liquid.util.Helpers;
 
-public class NotificationSettings extends SettingsPreferenceFragment implements
+public class AnimationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
