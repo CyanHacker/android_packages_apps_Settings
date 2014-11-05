@@ -49,7 +49,6 @@
 	
     <PreferenceScreen	
 		android:fragment="com.android.settings.nfc.PaymentSettings"
-        android:icon="@drawable/ic_settings_nfc_payment"
         android:title="@string/nfc_payment_settings_title"
         android:id="@+id/nfc_payment_settings" />
 
