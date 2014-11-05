@@ -2417,10 +2417,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="carrier_logo_summary">Hides carrier logo in status bar</string>
 
     <!-- LiquidSmooth Main Settings -->
-    <string name="liquid_settings_title">CyanHacker Control</string>
+    <string name="liquid_settings_title" translatable="false">CyanHacker Control</string>
 
     <!-- LiquidSmooth Sound -->
-    <string name="liquid_sound_title">CyanHacker sound</string>
+    <string name="liquid_sound_title" translatable="false">CyanHacker Sound</string>
     <string name="liquid_sound_summary">All sound related settings that we have added</string>
 
     <!-- Backlight brightness settings screen -->
