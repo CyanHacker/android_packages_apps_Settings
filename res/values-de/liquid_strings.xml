@@ -55,7 +55,7 @@
   <string name="notification_settings_title">Benachrichtigungen</string>
   <string name="active_display_title">Active Display</string>
   <string name="halo_options_title">Halo-Optionen</string>
-  <string name="notification_drawer_title">Benachrichtigungsleiste</string>
+  <string name="notification_drawer_title">Pulldown</string>
   <string name="pie_control_title">Pie-Steuerung</string>
   <string name="theme_settings_title">Dunkles Design</string>
   <string name="device_settings_title">Gerät</string>
@@ -478,7 +478,6 @@ Zusätzliche Optionen werden durch Gedrückthalten der Zeile angezeigt. Mit \"Be
   <string name="shortcuts_color_mode_title">Symbol-Farbmodus</string>
   <string name="shortcuts_color_mode_summary">Ändern Sie den Farbmodus für Shorcut-Symbole</string>
   <string name="notification_drawer_qs_title">Benachrichtigungen &amp; QS-Drawer</string>
-  <string name="notification_drawer_title">Benachrichtigungsleiste</string>
   <string name="notification_drawer_summary">Konfigurieren oder Ansehen der Notificationdrawer-Einstellungen</string>
   <string name="notification_shortcuts_settings_title">\"Verknüpfungen\"</string>
   <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen im Notification Drawer</string>
