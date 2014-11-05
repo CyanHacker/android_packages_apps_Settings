@@ -114,6 +114,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mToastAnimation;
     private CheckBoxPreference mDisableIM;
     private PreferenceScreen mScreenColorSettings;
+    private Preference mDisplayColor;
+    private Preference mDisplayGamma;
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mSunlightEnhancement;
     private CheckBoxPreference mColorEnhancement;
