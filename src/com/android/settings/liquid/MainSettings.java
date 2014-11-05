@@ -30,32 +30,10 @@ import java.util.List;
 
 public class MainSettings extends SettingsPreferenceFragment {
 
-    private static final String PREF_DEVICESETTINGS_APP = "devicesettings_app";
-
-    private PreferenceScreen mDeviceSettingsApp;
-	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.liquid_main_settings);
-		
-		       mDeviceSettingsApp = (PreferenceScreen) findPreference(PREF_DEVICESETTINGS_APP);
-
-        if (!deviceSettingsAppExists()) {
-            getPreferenceScreen().removePreference(mDeviceSettingsApp);
-        }
-    }
-	
-	 private boolean deviceSettingsAppExists() {
-        Intent intent = mDeviceSettingsApp.getIntent();
-        if (intent != null) {
-            PackageManager pm = getActivity().getPackageManager();
-            List<ResolveInfo> list = pm.queryIntentActivities(intent, PackageManager.GET_META_DATA);
-            int listSize = list.size();
-            return (listSize > 0) ? true : false;
-
-        }
-        return false;
     }
 }
