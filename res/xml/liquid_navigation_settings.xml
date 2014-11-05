@@ -54,6 +54,8 @@
         android:key="enable_nav_bar"
         android:title="@string/navbar_enable_bar"
         android:summary="@string/navbar_enable_bar_summary" />
+        
+    </PreferenceCategory>    
 
     <PreferenceCategory
         android:key="general_category"
@@ -115,8 +117,7 @@
             android:summary="@string/disable_ime_navbar_summary"
             android:dependency="enable_nav_bar"
             android:defaultValue="false" />
-
+            
     </PreferenceCategory>
-	</PreferenceCategory>
 
 </PreferenceScreen>
