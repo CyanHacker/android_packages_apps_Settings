@@ -28,7 +28,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
@@ -45,7 +44,7 @@ import com.android.settings.Utils;
 import com.android.settings.liquid.util.Helpers;
 
 public class AnimationSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, OnPreferenceClickListener {
+        Preference.OnPreferenceChangeListener{
 		
 	private static final String KEY_ANIMATION_OPTIONS = "category_animation_options";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
