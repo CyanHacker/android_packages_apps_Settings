@@ -48,8 +48,6 @@ import android.widget.Toast;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
 import com.android.settings.liquid.DisplayRotation;
-import com.android.settings.hardware.DisplayColor;
-import com.android.settings.hardware.DisplayGamma;
 
 
 import org.cyanogenmod.hardware.AdaptiveBacklight;
@@ -85,8 +83,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String KEY_SCREEN_OFF_GESTURE_SETTINGS = "screen_off_gesture_settings";
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
-    private static final String KEY_DISPLAY_COLOR = "color_calibration";
-    private static final String KEY_DISPLAY_GAMMA = "gamma_tuning";
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
     private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
     private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
@@ -114,8 +110,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mToastAnimation;
     private CheckBoxPreference mDisableIM;
     private PreferenceScreen mScreenColorSettings;
-    private Preference mDisplayColor;
-    private Preference mDisplayGamma;
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mSunlightEnhancement;
     private CheckBoxPreference mColorEnhancement;
@@ -221,16 +215,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         PreferenceCategory mCategory = (PreferenceCategory) findPreference("category_screen_options");
-
-        if (!DisplayColor.isSupported()) {
-            mDisplayColor = (Preference) findPreference(KEY_DISPLAY_COLOR);
-            mCategory.removePreference(mDisplayColor);
-        }
-
-        if (!DisplayGamma.isSupported()) {
-            mDisplayGamma = (Preference) findPreference(KEY_DISPLAY_GAMMA);
-            mCategory.removePreference(mDisplayGamma);
-        }
 
         if (!isPostProcessingSupported()) {
             mScreenColorSettings = (PreferenceScreen) findPreference(KEY_SCREEN_COLOR_SETTINGS);
