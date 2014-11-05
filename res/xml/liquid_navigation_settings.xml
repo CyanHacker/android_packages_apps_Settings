@@ -47,6 +47,9 @@
         android:summary="@string/pa_pie_controls_summary"
         android:title="@string/pa_pie_controls_title" />
 
+	<PreferenceCategory
+        android:title="@string/nav_bar_title">	
+		
     <CheckBoxPreference
         android:key="enable_nav_bar"
         android:title="@string/navbar_enable_bar"
@@ -114,5 +117,6 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
+	</PreferenceCategory>
 
 </PreferenceScreen>

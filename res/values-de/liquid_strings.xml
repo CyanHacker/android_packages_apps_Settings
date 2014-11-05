@@ -2097,4 +2097,5 @@ auf <xliff:g id="new" example="libart.so">%2$s</xliff:g> zu ändern?</string>
   <string name="wifi_ap_clients_title">Verbundene Geräte</string>
   <string name="wifi_ap_client_ap_disabled">Hotspot deaktiviert</string>
   <string name="wifi_ap_client_none_connected">Keine Geräte angeschlossen</string>
+  <string name="nav_bar_title">Navigationsleiste</string>
 </resources>
