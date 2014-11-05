@@ -28,12 +28,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
+import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.view.Gravity;
+import android.widget.Toast;
 
 import com.android.internal.util.liquid.DeviceUtils;
 
@@ -149,11 +151,6 @@ public class AnimationSettings extends SettingsPreferenceFragment implements
                     Settings.System.LISTVIEW_INTERPOLATOR,
                     value);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
-        }
-		if (KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED.equals(key)) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED,
-                    (Boolean) objValue ? 1 : 0);
         }
         if (KEY_TOAST_ANIMATION.equals(key)) {
             int index = mToastAnimation.findIndexOfValue((String) objValue);

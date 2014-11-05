@@ -43,7 +43,6 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
@@ -545,7 +544,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_WAKE_SCREEN,
                     (Boolean) objValue ? 1 : 0);
-        }      
+        }
+        if (KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED,
+                    (Boolean) objValue ? 1 : 0);
+        }
+		
         return true;
     }
 
