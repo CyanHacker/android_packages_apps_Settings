@@ -32,6 +32,9 @@
   import android.preference.SlimSeekBarPreference;
   import android.provider.Settings;
   import android.os.UserHandle;
+  import android.view.Menu;
+  import android.view.MenuItem;
+  import android.view.MenuInflater;
   
   import com.android.internal.util.liquid.DeviceUtils;
   
@@ -66,6 +69,7 @@ public class HeadsUp extends SettingsPreferenceFragment implements
     private ColorPickerPreference mHeadsUpBgColor;
     private ColorPickerPreference mHeadsUpTextColor;
 	
+	private static final int MENU_RESET = Menu.FIRST;
     private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
     private static final int DEFAULT_TEXT_COLOR = 0xffffffff;
 
