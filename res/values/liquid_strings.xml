@@ -279,6 +279,7 @@
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="volume_ring_only_description">Ringtone</string>
+	<string name="volume_panel_bg_color_title">Volume panel BG color</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Camera shutter sound</string>
@@ -1193,6 +1194,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recent_panel_100">100% (default)</string>
     <string name="recent_panel_85">85%</string>
     <string name="recent_panel_70">70%</string>
+	<string name="trds_default_color">TRDS default</string>
 
     <!-- Recent apps mode -->
     <string name="recent_panel_expanded_mode_title">Expanded mode</string>
