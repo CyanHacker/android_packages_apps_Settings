@@ -35,6 +35,8 @@
   import android.view.Menu;
   import android.view.MenuItem;
   import android.view.MenuInflater;
+  import android.app.AlertDialog;
+  import android.content.DialogInterface;
   
   import com.android.internal.util.liquid.DeviceUtils;
   
@@ -57,7 +59,9 @@ public class HeadsUp extends SettingsPreferenceFragment implements
     private static final String PREF_HEADS_UP_SHOW_UPDATE = "heads_up_show_update";
     private static final String PREF_HEADS_UP_GRAVITY = "heads_up_gravity";
     private static final String PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN = "heads_up_exclude_from_lock_screen";
-
+    private static final String HEADS_UP_BG_COLOR ="heads_up_bg_color";
+    private static final String HEADS_UP_TEXT_COLOR ="heads_up_text_color";
+	
     ListPreference mHeadsUpSnoozeTime;
     ListPreference mHeadsUpTimeOut;
     CheckBoxPreference mHeadsUpExpanded;
