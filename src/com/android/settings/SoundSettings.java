@@ -410,7 +410,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                     intHex);
             return true;
             }	
-        }
         return true;
     }
 
