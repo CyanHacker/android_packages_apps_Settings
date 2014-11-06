@@ -86,7 +86,6 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
 	private ColorPickerPreference mRecentCardBgColor;
     private ColorPickerPreference mRecentCardTextColor;
 
-	private static final int MENU_RESET = Menu.FIRST;
     private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
 
     @Override
@@ -334,7 +333,6 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
 	@Override
     public void onResume() {
         super.onResume();
-        updateRecentPanelPreferences();
     }
 
     private void resetValues() {
