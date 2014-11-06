@@ -1641,6 +1641,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Custom recent styles -->
     <string name="custom_recent_title">Custom recent styles</string>
     <string name="custom_recent_summary">Enable slim recent or disable for stock</string>
+	<string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_card_text_color_title">Card text color</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Screen recorder</string>
@@ -2306,6 +2309,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="heads_up_exclude_from_lock_screen_summary">Hide notifications on lock screen</string>
 	<string name="heads_up_bg_color_title">Background color</string>
     <string name="heads_up_text_color_title">Text color</string>
+	
+	<string name="reset_default_message">Reset default</string>
 
     <!-- Text for disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
