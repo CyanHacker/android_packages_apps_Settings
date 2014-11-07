@@ -69,6 +69,9 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
 	private static final String RECENT_CARD_BG_COLOR ="recent_card_bg_color";
     private static final String RECENT_CARD_TEXT_COLOR ="recent_card_text_color";
 
+	
+    private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
+	private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1;
 
     static final int DEFAULT_MEM_COLOR = 0xff8d8d8d;
@@ -90,8 +93,7 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
 	private ColorPickerPreference mRecentCardBgColor;
     private ColorPickerPreference mRecentCardTextColor;
 	
-	private static final int MENU_RESET = Menu.FIRST;
-    private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
