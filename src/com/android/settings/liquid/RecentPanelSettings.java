@@ -18,10 +18,14 @@ package com.android.settings.liquid;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -36,6 +40,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.android.settings.DialogCreatable;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -64,7 +69,6 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
 	private static final String RECENT_CARD_BG_COLOR ="recent_card_bg_color";
     private static final String RECENT_CARD_TEXT_COLOR ="recent_card_text_color";
 
-    private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1;
 
     static final int DEFAULT_MEM_COLOR = 0xff8d8d8d;
@@ -85,7 +89,8 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
     private ColorPickerPreference mRecentPanelBgColor;
 	private ColorPickerPreference mRecentCardBgColor;
     private ColorPickerPreference mRecentCardTextColor;
-
+	
+	private static final int MENU_RESET = Menu.FIRST;
     private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
 
     @Override
@@ -96,6 +101,7 @@ public class RecentPanelSettings extends SettingsPreferenceFragment
         String hexColor;
 
         addPreferencesFromResource(R.xml.recent_panel_settings);
+		initializeAllPreferences();
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
