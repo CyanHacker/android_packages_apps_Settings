@@ -2101,4 +2101,6 @@ auf <xliff:g id="new" example="libart.so">%2$s</xliff:g> zu ändern?</string>
   <string name="sar_info">Maximum SAR</string>
   <string name="maximum_head_level">Head: %1$s W/kg</string>
   <string name="maximum_body_level">Body: %1$s W/kg</string>
+  <string name="add_headsup_apps">Apps hinzufügen</string>
+  <string name="add_headsup_apps_summary">Apps hinzufügen, die HeadsUp Benachrichrigungen zeigen dürfen</string>
 </resources>

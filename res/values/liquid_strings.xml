@@ -2359,6 +2359,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="cyanhacker_title">CyanHacker</string>	
     <string name="mod_version">CyanHacker version</string>
 	<string name="nav_bar_title">Navigation bar</string>
+	<string name="add_headsup_apps">Add apps</string>
+	<string name="add_headsup_apps_summary">Allow certain apps to show HeadsUp</string>
 	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
