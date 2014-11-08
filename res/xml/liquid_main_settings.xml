@@ -23,7 +23,7 @@
     <PreferenceScreen
 		android:id="@+id/cyanhacker_apps"
     	android:icon="@drawable/ic_romco" 
-    	android:title="@string/rom_control"
+    	android:title="@string/cyanhacker_apps"
 		settings:includeXmlForSearch="@xml/cyanhacker_apps"
 		android:fragment="com.android.settings.hacker.CyanHackerApps"/>
 
