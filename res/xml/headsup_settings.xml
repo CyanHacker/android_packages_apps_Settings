@@ -18,6 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/heads_up_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+	<Preference 
+	    android:fragment="com.android.settings.applications.ManageApplications"
+        android:title="@string/add_headsup_apps"
+		android:summary="@string/add_headsup_apps_summary"
+        android:id="@+id/application_settings" />
 
     <CheckBoxPreference
         android:key="heads_up_exclude_from_lock_screen"
@@ -53,6 +59,18 @@
         android:summary="@string/heads_up_gravity_summary"
         android:persistent="false"
         android:defaultValue="false" />
+	
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="heads_up_bg_color"
+        android:title="@string/heads_up_bg_color_title"
+        android:defaultValue="0x00ffffff"
+        alphaSlider="true" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="heads_up_text_color"
+        android:title="@string/heads_up_text_color_title"
+        android:defaultValue="0"
+        alphaSlider="true" />	
 
     <ListPreference
         android:key="heads_up_snooze_time"

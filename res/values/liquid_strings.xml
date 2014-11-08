@@ -279,6 +279,7 @@
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="volume_ring_only_description">Ringtone</string>
+	<string name="volume_panel_bg_color_title">Volume panel BG color</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Camera shutter sound</string>
@@ -1193,6 +1194,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recent_panel_100">100% (default)</string>
     <string name="recent_panel_85">85%</string>
     <string name="recent_panel_70">70%</string>
+	<string name="trds_default_color">Default</string>
 
     <!-- Recent apps mode -->
     <string name="recent_panel_expanded_mode_title">Expanded mode</string>
@@ -1639,6 +1641,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Custom recent styles -->
     <string name="custom_recent_title">Custom recent styles</string>
     <string name="custom_recent_summary">Enable slim recent or disable for stock</string>
+	<string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_card_text_color_title">Card text color</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Screen recorder</string>
@@ -2302,6 +2307,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="heads_up_floating_window_summary">Open heads up in floating window</string>
     <string name="heads_up_exclude_from_lock_screen_title">Disable on lock screen</string>
     <string name="heads_up_exclude_from_lock_screen_summary">Hide notifications on lock screen</string>
+	<string name="heads_up_bg_color_title">Background color</string>
+    <string name="heads_up_text_color_title">Text color</string>
+	
+	<string name="reset_default_message">Reset default</string>
 
     <!-- Text for disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
@@ -2350,6 +2359,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="cyanhacker_title">CyanHacker</string>	
     <string name="mod_version">CyanHacker version</string>
 	<string name="nav_bar_title">Navigation bar</string>
+	<string name="add_headsup_apps">Add apps</string>
+	<string name="add_headsup_apps_summary">Allow certain apps to show HeadsUp</string>
 	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
