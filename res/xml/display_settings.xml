@@ -91,7 +91,7 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.ScreenColorSettings" />
         </PreferenceScreen>
-
+		
         <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
@@ -104,7 +104,7 @@
                 android:summary="@string/screen_timeout_summary"
                 android:persistent="false"
                 android:entries="@array/screen_timeout_entries"
-                android:entryValues="@array/screen_timeout_values" />
+                android:entryValues="@array/screen_timeout_values" />	
 
         <CheckBoxPreference
                 android:key="adaptive_backlight"
@@ -136,6 +136,33 @@
         </Preference>
 
         </PreferenceCategory>
+		
+		        <!-- Dynamic system bars -->
+        <PreferenceCategory
+            android:key="dynamic_system_bars_category"
+            android:title="@string/dynamic_system_bars_category_title" >
+
+        <CheckBoxPreference
+            android:key="dynamic_status_bar"
+            android:title="@string/dynamic_status_bar_title"
+            android:summary="@string/dynamic_status_bar_summary" />
+
+        <CheckBoxPreference
+            android:key="dynamic_navigation_bar"
+            android:title="@string/dynamic_navigation_bar_title"
+            android:summary="@string/dynamic_navigation_bar_summary" />
+
+        <CheckBoxPreference
+            android:key="dynamic_system_bars_gradient"
+            android:title="@string/dynamic_system_bars_gradient_title"
+            android:summary="@string/dynamic_system_bars_gradient_summary" />
+
+        <CheckBoxPreference
+            android:key="dynamic_status_bar_filter"
+            android:title="@string/dynamic_status_bar_filter_title"
+            android:summary="@string/dynamic_status_bar_filter_summary" />
+			
+		</PreferenceCategory>
 
         <PreferenceCategory
             android:key="category_wakeup_options"
