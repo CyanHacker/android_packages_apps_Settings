@@ -2344,7 +2344,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="omniswitch_title">OmniSwitch</string>
     <string name="omniswitch_summary">Multitasking</string> 
     <string name="wallpaper">Wallpaper</string>
-    <string name="rom_control">CyanHacker Apps</string>
+    <string name="cyanhacker_apps">CyanHacker Apps</string>
     <string name="themestore">Theme Store</string>
     <string name="pulldown_title">Pulldown</string>
     <string name="pulldown_summary">Multitasking</string> 
