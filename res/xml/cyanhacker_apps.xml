@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 CyanHacker based on LiquidSmooth
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/cyanhacker_apps" >
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_bbs" 
+			android:title="@string/bbs" 
+			android:summary="@string/bbs_summary">
+        <intent 
+			android:targetPackage="com.asksven.betterbatterystats_xdaedition" 
+			android:action="android.intent.action.VIEW" 
+			android:targetClass="com.asksven.betterbatterystats.StatsActivity" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_clocksync" 
+			android:title="@string/clocksync" 
+			android:summary="@string/clocksync_summary">
+        <intent 
+			android:targetPackage="ru.org.amip.ClockSync" 
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="ru.org.amip.ClockSync.view.Main" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_folder" 
+			android:title="@string/fmount" 
+			android:summary="@string/fmount_summary">
+        <intent 
+			android:targetPackage="com.devasque.fmount" 
+			android:action="android.intent.action.VIEW" 
+			android:targetClass="com.devasque.fmount.FolderpairActivity" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_sdmaid" 
+			android:title="@string/sdmaid" 
+			android:summary="@string/sdmaid_summary">
+        <intent 
+			android:targetPackage="eu.thedarken.sdm" 
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="eu.thedarken.sdm.SDMMain" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_greenify" 
+			android:title="@string/greenify" 
+			android:summary="@string/greenify_summary">
+        <intent 
+			android:targetPackage="com.oasisfeng.greenify" 
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="com.oasisfeng.greenify.GreenifyActivity" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_opera" 
+			android:title="@string/opera" 
+			android:summary="@string/opera_summary">
+        <intent 
+			android:targetPackage="com.opera.max" 
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="com.opera.max.ui.v2.MainActivity" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen 
+			android:icon="@drawable/ic_titanium" 
+			android:title="@string/titanium" 
+			android:summary="@string/titanium_summary">
+        <intent 
+			android:targetPackage="com.keramidas.TitaniumBackup" 
+			android:action="android.intent.action.MAIN" 
+			android:targetClass="com.keramidas.TitaniumBackup.MainActivity" />
+    </PreferenceScreen>		
+</PreferenceScreen>			

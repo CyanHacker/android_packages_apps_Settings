@@ -2361,6 +2361,20 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 	<string name="nav_bar_title">Navigation bar</string>
 	<string name="add_headsup_apps">Add apps</string>
 	<string name="add_headsup_apps_summary">Allow certain apps to show HeadsUp</string>
+   	<string name="sdmaid">SD Maid</string>
+   	<string name="sdmaid_summary">Multi-Tool</string>
+   	<string name="greenify">Greenify</string>
+   	<string name="greenify_summary">Force Apps to Sleep Mode</string>
+   	<string name="opera">Opera Max</string>
+   	<string name="opera_summary">Save Data Volume</string>
+  	<string name="fmount">Folder Mount</string>
+   	<string name="fmount_summary">Move Application Data to External SD</string>
+   	<string name="titanium">Titanium Backup</string>
+   	<string name="titanium_summary">Backup/Restore Apps and Data, uninstall System Apps and much more</string>
+   	<string name="bbs">BetterBatteryStats</string>   
+   	<string name="bbs_summary">Battery Stats</string>
+   	<string name="clocksync">ClockSync</string>
+   	<string name="clocksync_summary">Sync System Time with an Atomic Clock</string>
 	
     <!-- Screen Color Settings -->
     <string name="display_color_title">Screen color</string>
