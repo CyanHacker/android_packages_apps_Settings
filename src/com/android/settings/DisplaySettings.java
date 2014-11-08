@@ -531,7 +531,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 }
             }
             summary.append(" " + getString(R.string.display_rotation_unit));
-
+		}
+    }		
+			
     private void updateDynamicSystemBarsCheckboxes() {
         final Resources res = getResources();
 
