@@ -100,13 +100,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mLightOptions;
     private PreferenceScreen mNotificationLight;
     private CheckBoxPreference mAccelerometer;
-    private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mNotificationPeek;
     private CheckBoxPreference mDynamicStatusBar;
     private CheckBoxPreference mDynamicNavigationBar;
     private CheckBoxPreference mDynamicSystemBarsGradient;
     private CheckBoxPreference mDynamicStatusBarFilter;
-    private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
     private CheckBoxPreference mVolumeWake;
     private CheckBoxPreference mWakeUpWhenPluggedOrUnplugged;
@@ -182,11 +180,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mDynamicStatusBarFilter =
                 (CheckBoxPreference) findPreference(KEY_DYNAMIC_STATUS_BAR_FILTER);
         mDynamicStatusBarFilter.setPersistent(false);
-
-        mNotificationPeek = (CheckBoxPreference) findPreference(KEY_PEEK);
-        mNotificationPeek.setPersistent(false);
-
-       
+  
         mBatteryPulse = (PreferenceScreen) findPreference(KEY_BATTERY_LIGHT);
         if (mNotificationPulse != null && mNotificationLight != null && mBatteryPulse != null) {
             if (getResources().getBoolean(
