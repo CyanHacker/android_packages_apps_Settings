@@ -56,7 +56,7 @@
         <intent 
 			android:targetPackage="eu.thedarken.sdm" 
 			android:action="android.intent.action.MAIN" 
-			android:targetClass="eu.thedarken.sdm.SDMMain" />
+			android:targetClass="eu.thedarken.sdm.SDMMainActivity" />
     </PreferenceScreen>
 	
     <PreferenceScreen 
